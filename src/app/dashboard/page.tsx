@@ -1,6 +1,6 @@
-import DashboardTemplate from "@/templates/DashboardTemplate/DashboardTemplate.core";
+import Dashboard from "@/templates/Dashboard/Dashboard.core";
 import React from "react";
 
 export default function Index() {
-  return <DashboardTemplate />;
+  return <Dashboard />;
 }
