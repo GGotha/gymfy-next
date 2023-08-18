@@ -1,0 +1,6 @@
+*.hbs
+/node_modules
+/public
+/.*rc
+/*.json
+/*.lock

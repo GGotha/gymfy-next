@@ -9,7 +9,8 @@
     "lint": "next lint",
     "test": "jest --maxWorkers=25%",
     "test:watch": "yarn test --watch",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "@types/node": "20.5.0",
@@ -22,6 +23,7 @@
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-fade-in": "^2.0.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },
