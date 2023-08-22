@@ -1,11 +1,13 @@
 "use client"
 
+import Button from "@/components/Button/Button.core"
 import LikeAndFollowText from "@/templates/Home/LikeAndFollowText"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import FadeIn from "react-fade-in"
 
 export default function Home() {
-  // ;<div className=""></div>
+  const router = useRouter()
 
   return (
     <div className="bg-wallpaper_home bg-no-repeat bg-cover h-screen md:h-full w-full min-h-[900px]">
@@ -25,16 +27,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn transitionDuration={1000}>
-              {/* <ButtonComponent
-                backgroundColor="bg-black"
-                backgroundColorHover="hover:bg-zinc-900"
-                hasBounceAnimation
-                onClick={() => {
-                  navigate("/login")
-                }}
-              >
-                Entrar
-              </ButtonComponent> */}
+              <Button onClick={() => router.push("/login")}>Entrar</Button>
             </FadeIn>
           </div>
           <div className="w-full lg:w-1/2 mt-40">
